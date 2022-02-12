@@ -1,9 +1,3 @@
 INDEX VERSION 1.131
-C:\Users\Hi\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3948963520.index
+C:\Users\park\Documents\Practice_CGV_Copy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3948963520.index
 \CGV\src\main\java
-C:\Users\Hi\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2812831404.index
-\CGV\src\main\java
-C:\Users\Hi\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\165050677.index
-\KeepAnimal\src
-C:\Users\Hi\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\896491455.index
-\springTest\src\main\java
