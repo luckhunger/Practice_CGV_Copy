@@ -1,0 +1,5 @@
+com\test\cgv\CommonMapper.class
+com\test\cgv\HomeController.class
+com\test\cgv\CommonService.class
+com\test\cgv\CommonServiceImpl.class
+com\test\cgv\CommonDao.class

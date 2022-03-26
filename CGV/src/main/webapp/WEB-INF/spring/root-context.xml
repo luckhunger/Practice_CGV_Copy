@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+        http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+    
+    <!-- Root Context: defines shared resources visible to all other web components -->
+    
+        <!-- data source -->
+    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+<!--         <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" /> -->
+        <property value="oracle.jdbc.driver.OracleDriver" name="driverClassName" />
+<!--         <property value="jdbc:oracle:thin:@localhost:1522:seo" name="url" /> -->
+<!--         <property value="sys as sysdba" name="username" />       -->
+<!--         <property value="1111" name="password" />      -->
+        <property name="url" value="jdbc:oracle:thin:@localhost:1522:seo"></property>
+        
+        <property name="username" value="seo"></property>
+        <property name="password" value="1111"></property>
+        
+    </bean>
+
+    <!-- SqlSessionFactory -->
+<!--     <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="SqlSessionFactory"> -->
+<!--         <property name="dataSource" ref="dataSource" /> -->
+<!--         <property value="classpath:mybatis-config.xml" name="configLocation" /> -->
+<!--         <property value="classpath:/mapper/**/*Mapper.xml" name="mapperLocations" /> -->
+<!--     </bean> -->
+
+<!--     <bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSession" destroy-method="clearCache"> -->
+<!--         <constructor-arg name="sqlSessionFactory" ref="SqlSessionFactory" /> -->
+<!--     </bean> -->
+        
+    <!-- Mybatis 연동 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="/WEB-INF/spring/mybatis-config.xml" />
+        <property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml" />
+    </bean>
+        
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
+        <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+    
+        
+</beans>
