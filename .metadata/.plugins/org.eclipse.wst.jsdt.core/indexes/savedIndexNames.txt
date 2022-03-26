@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+C:\Users\park\Documents\Practice_CGV_Copy\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1572478753.index
-485706006.index
-1058269668.index
-1398744072.index
-3187749741.index
-4017320348.index
-3948963520.index
