@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.test.cgv.notice">
+
+<!-- 공지사항 화면 조회 -->
+<select id="retrieveNoticeList" resultType="util.List">
+
+SELECT  TYPE_CD
+      , BOARD_TITLE
+      , BOARD_COMMENT
+      , REG_DT
+      , SHOW_COUNT
+FROM BOARD
+
+</select>
+
+
+<!-- 공지사항 작성 화면으로 이동 -->
+<select id="retrieveWrite" resultType="util.Map">
+SELECT  BOARD_TITLE
+      , BOARD_COMMENT
+      , REG_DT
+FROM BOARD
+</select>
+
+
+
+</mapper>
