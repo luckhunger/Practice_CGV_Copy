@@ -388,8 +388,8 @@ input[type='text'],input[type='password'] {display:inline-block; height:25px; li
                     <dt><h2><a href="/ticket/" tabindex="-1">예매</a></h2></dt>
                     <dd><h3><a href="/ticket/">빠른예매</a></h3></dd>
                     <dd><h3><a href="/reserve/show-times/">상영스케줄</a></h3></dd>
-                    <dd><h3><a href="/ticket/eng/newdefault.aspx">English Ticketing</a></h3></dd>
-                    <dd><h3><a href="/reserve/show-times/eng/">English Schedule</a></h3></dd>
+<!--                     <dd><h3><a href="/ticket/eng/newdefault.aspx">English Ticketing</a></h3></dd> -->
+<!--                     <dd><h3><a href="/reserve/show-times/eng/">English Schedule</a></h3></dd> -->
                 </dl>
             </li>
             <li>
@@ -397,19 +397,19 @@ input[type='text'],input[type='password'] {display:inline-block; height:25px; li
                 <dl class="nav_overMenu">
                     <dt><h2><a href="/culture-event/popcorn-store/" tabindex="-1">스토어</a></h2></dt>
                     
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2">영화관람권</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2">영화관람권</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3">기프트카드</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3">기프트카드</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4">콤보</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4">콤보</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5">팝콘</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5">팝콘</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6">음료</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6">음료</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7">스낵</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7">스낵</a></h3></dd> -->
                         
-                            <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10">플레이존</a></h3></dd>
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10">플레이존</a></h3></dd> -->
                         
                     <dd><h3><a href="https://brand.naver.com/cgv" class="arrowR" target="_blank">씨네샵</a></h3></dd>
                 </dl>
@@ -417,23 +417,23 @@ input[type='text'],input[type='password'] {display:inline-block; height:25px; li
             <li>
                 <h2 onclick="gaEventLog('PC_GNB','주메뉴_이벤트','')"><a href="/culture-event/event/defaultNew.aspx">이벤트</a></h2>
                 <dl class="nav_overMenu">
-                    <dt><h2><a href="/culture-event/event/defaultNew.aspx?mCode=001" tabindex="-1">이벤트</a></h2></dt>
-                    <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=001">SPECIAL</a></h3></dd>
-                    <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=004">영화/예매</a></h3></dd>
-                    <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=008">멤버십/CLUB</a></h3></dd>
-                    <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=005">CGV 극장별</a></h3></dd>
-                    <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=006">제휴할인</a></h3></dd>
-                    <dd><h3><a href="/user/mycgv/event/result_list.aspx">당첨자 발표</a></h3></dd>
-                    <dd><h3><a href="/culture-event/event/end-list.aspx">종료된 이벤트</a></h3></dd>
+<!--                     <dt><h2><a href="/culture-event/event/defaultNew.aspx?mCode=001" tabindex="-1">이벤트</a></h2></dt> -->
+<!--                     <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=001">SPECIAL</a></h3></dd> -->
+<!--                     <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=004">영화/예매</a></h3></dd> -->
+<!--                     <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=008">멤버십/CLUB</a></h3></dd> -->
+<!--                     <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=005">CGV 극장별</a></h3></dd> -->
+<!--                     <dd><h3><a href="/culture-event/event/defaultNew.aspx?mCode=006">제휴할인</a></h3></dd> -->
+<!--                     <dd><h3><a href="/user/mycgv/event/result_list.aspx">당첨자 발표</a></h3></dd> -->
+<!--                     <dd><h3><a href="/culture-event/event/end-list.aspx">종료된 이벤트</a></h3></dd> -->
                 </dl>
             </li>
             <li>
                 <h2 onclick="gaEventLog('PC_GNB','주메뉴_해택','')"><a href="/discount/discountlist.aspx">혜택</a></h2>
                 <dl class="nav_overMenu">
-                    <dt><h2><a href="/discount/discountlist.aspx" tabindex="-1">혜택</a></h2></dt>
-                    <dd><h3><a href="/discount/discountlist.aspx">CGV 할인정보</a></h3></dd>
-                    <dd><h3><a href="https://www.cgv.co.kr/user/memberShip/ClubService.aspx">CLUB 서비스</a></h3></dd>
-                    <dd><h3><a href="/user/vip-lounge/">VIP 라운지</a></h3></dd>
+<!--                     <dt><h2><a href="/discount/discountlist.aspx" tabindex="-1">혜택</a></h2></dt> -->
+<!--                     <dd><h3><a href="/discount/discountlist.aspx">CGV 할인정보</a></h3></dd> -->
+<!--                     <dd><h3><a href="https://www.cgv.co.kr/user/memberShip/ClubService.aspx">CLUB 서비스</a></h3></dd> -->
+<!--                     <dd><h3><a href="/user/vip-lounge/">VIP 라운지</a></h3></dd> -->
                 </dl>
             </li>
         </ul>
