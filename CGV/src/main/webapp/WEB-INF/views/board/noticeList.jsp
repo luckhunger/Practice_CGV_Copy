@@ -4,40 +4,43 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>공지사항</title>
 
 <style>
 
 </style>
 
-</head>
+<title>공지사항</title>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.utils.js"></script>
 
 <script>
 
 // 공지사항 글쓰기 화면으로 이동
-function goWrite() {
-    $.ajax(
-    	{
-    		type:"POST",
-    		url:"/board/noticeWrite",
-    		data: {},
-    		dataType:"json",
-    		success: 
-    			function(data) {
-    			    noticeWrite();
-    			},
-    		error: alert("작성내역을 다시 확인하시기 바랍니다.");
-    	}	
-    )
-};
-
-
-
-
-
+// function goWrite() {
+//     $.ajax(
+//         {
+//             type:"POST",
+//             url:"/board/noticeWrite.jsp",
+//             data: {},
+//             dataType:"html",
+//             success: 
+//                 function(data) {
+//                     console.log(data);
+//                 },
+//             error: alert("작성내역을 다시 확인하시기 바랍니다.")
+//         }   
+//     )
+// };
 
 
 </script>
+
+
+
+</head>
+
+
 
 <body>
 
@@ -106,7 +109,8 @@ function goWrite() {
 </div>
 
 <div>
-    <button id="write" onclick="goWrite();">글쓰기</button>
+    <!-- <button id="write" onclick="goWrite();">글쓰기</button> -->
+    <button id="write" onclick="location.href='noticeWrite.do'">글쓰기</button> 
 </div>
 
 <div id="tab_contents">
