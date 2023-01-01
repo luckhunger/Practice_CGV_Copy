@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.test.cgv.board">
+
+	<!-- 공지사항 화면 조회 -->
+	<select id="retrieveNoticeList" resultType="util.List">
+	
+	SELECT  TYPE_CD
+	      , BOARD_TITLE
+	      , BOARD_COMMENT
+	      , REG_DT
+	      , SHOW_COUNT
+	FROM BOARD
+	
+	</select>
+	
+	
+	<!-- 공지사항 작성 화면으로 이동 -->
+	<select id="retrieveWrite" resultType="util.Map">
+	SELECT  BOARD_TITLE
+	      , BOARD_COMMENT
+	      , REG_DT
+	FROM BOARD
+	</select>
+
+    <insert id="insertNotice" resultType="HashMap">
+    INSERT INTO BOARD
+    (
+        BOARD_PK
+      , USER_PK
+      , TYPE_CD
+      , BOARD_TITLE
+      , BOARD_COMMENT
+      , USER_ID
+      , REG_ID
+      , REG_DT
+      , EDIT_ID
+      , EDIT_DT
+      , SHOW_COUNT
+      , OPEN_YN
+      , FILE_ID
+    ) VALUES(
+        #{boardPk}
+      , #{userPk} 
+      , #{typeCd}
+      , #{boardTitle}
+      , #{boardComment}
+      , #{userId}
+      , #{regId}
+      , #{regDt}
+      , #{editId}
+      , SYSDATE
+      , SELECT BOARD_SEQ.NEXTVAL FROM dual
+      , #{openYn}
+      , #{fileId}
+    )
+    
+    
+    
+    
+    </insert>
+
+</mapper>
