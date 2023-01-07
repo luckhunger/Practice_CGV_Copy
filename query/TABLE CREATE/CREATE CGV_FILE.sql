@@ -1,0 +1,52 @@
+DROP TABLE C##ORCL.CGV_FILE CASCADE CONSTRAINTS;
+
+CREATE TABLE C##ORCL.CGV_FILE
+(
+  FILE_PK    NUMBER(10)                         NOT NULL,
+  BOARD_PK   NUMBER(10)                         NOT NULL,
+  FILE_PATH  VARCHAR2(200 BYTE)                 NOT NULL,
+  FILE_NM    VARCHAR2(200 BYTE)                 NOT NULL,
+  FILE_SN    NUMBER(10)                         NOT NULL
+)
+TABLESPACE USERS
+PCTFREE    10
+INITRANS   1
+MAXTRANS   255
+STORAGE    (
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+LOGGING 
+NOCOMPRESS 
+NOCACHE;
+
+COMMENT ON TABLE C##ORCL.CGV_FILE IS '첨부파일';
+
+COMMENT ON COLUMN C##ORCL.CGV_FILE.FILE_PK IS '첨부파일 키';
+
+COMMENT ON COLUMN C##ORCL.CGV_FILE.BOARD_PK IS '게시판 키';
+
+COMMENT ON COLUMN C##ORCL.CGV_FILE.FILE_PATH IS '파일 경로';
+
+COMMENT ON COLUMN C##ORCL.CGV_FILE.FILE_NM IS '파일 명';
+
+COMMENT ON COLUMN C##ORCL.CGV_FILE.FILE_SN IS '파일 순번';
+
+
+ALTER TABLE C##ORCL.CGV_FILE ADD (
+  PRIMARY KEY
+  (FILE_PK)
+  USING INDEX
+    TABLESPACE USERS
+    PCTFREE    10
+    INITRANS   2
+    MAXTRANS   255
+    STORAGE    (
+                PCTINCREASE      0
+                BUFFER_POOL      DEFAULT
+               )
+  ENABLE VALIDATE);
+
+
+--  There is no statement for index C##ORCL.SYS_C007455.
+--  The object is created when the parent object is created.
