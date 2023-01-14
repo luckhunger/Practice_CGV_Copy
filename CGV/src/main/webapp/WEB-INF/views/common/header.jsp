@@ -19,26 +19,6 @@
 <!-- <script type="text/javascript" src="../resources/js/swiper.min.js" ></script> -->
 
 <script type="text/javascript">
-//TopMenu 영역 LOG
-    //빨강 CGV클릭
-//     $('.header_content > .contents > h1 > a').on({
-//         click: function (e) {
-//             gaEventLog('PC_GNB', '홈', '');
-//         }
-//     });
-//     //서비스 메뉴
-//     $('.header_content > .contents > ul > li > a').on({
-//         click: function (e) {
-//             gaEventLog('PC_GNB', '서비스메뉴_'+this.text, '');
-//         }
-//     });
-
-</script>
-            <!-- 서비스 메뉴 -->
-           
-			<!-- 서브 메뉴 -->
-			
-<script type="text/javascript">
     $(document).ready(function () {
         $('.nav_menu > li > h2 > a').on({
             mouseenter: function (e) {
@@ -56,8 +36,6 @@
                 }
             }
         });
-
-        //------------------end----------------------- [@,.o]>
 
         $('.nav').on({
             mouseleave: function (e) {
@@ -86,13 +64,10 @@
         //통합검색 상단 검색 버튼
         $('#btn_header_search').on('click', function () {
 
-           
             if ($('#header_ad_keyword').val() != "")
                 goSearch($('#header_ad_keyword'));      //광고
             else
                 goSearch($('#header_keyword'));
-
-            
             return false;
         });
 
@@ -111,19 +86,15 @@
 
     //통합검색
     function goSearch($objKeyword) {
-
         if ($objKeyword.val() == "") {
             alert("검색어를 입력해 주세요");
             $objKeyword.focus();
             return false;
         }
-
         //GA 검색로그
         gaEventLog('PC_GNB', '검색', $objKeyword.val());
         location = "/search/?query=" + escape($objKeyword.val());
     }
-
-   
 
     //상단 키워드 광고 (S)
     function AdSearchExt(txt, SearchText) {
@@ -368,8 +339,8 @@ input[type='text'],input[type='password'] {display:inline-block; height:25px; li
             <li>
                 <h2><a href="/movies/?lt=1&ft=0">영화</a></h2>
                 <dl class="nav_overMenu">
-                    <dt><h2><a href="/movies/?lt=1&ft=0" tabindex="-1">영화</a></h2></dt>
-                    <dd><h3><a href="/movies/?lt=1&ft=0">무비차트</a></h3></dd>
+                    <dt><h2><a href="#" tabindex="-1">영화</a></h2></dt>
+                    <dd><h3><a href="/cgv/movie/movies.do">무비차트</a></h3></dd>
                     <dd><h3><a href="/arthouse/">아트하우스</a></h3></dd>
                     <dd><h3><a href="/culture-event/event/detailViewUnited.aspx?seq=30717">ICECON</a></h3></dd>
                 </dl>
@@ -397,18 +368,12 @@ input[type='text'],input[type='password'] {display:inline-block; height:25px; li
                 <dl class="nav_overMenu">
                     <dt><h2><a href="/culture-event/popcorn-store/" tabindex="-1">스토어</a></h2></dt>
                     
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2">영화관람권</a></h3></dd> -->
-                        
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3">기프트카드</a></h3></dd> -->
-                        
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4">콤보</a></h3></dd> -->
-                        
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5">팝콘</a></h3></dd> -->
-                        
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6">음료</a></h3></dd> -->
-                        
-<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7">스낵</a></h3></dd> -->
-                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2">영화관람권</a></h3></dd> -->                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3">기프트카드</a></h3></dd> -->                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4">콤보</a></h3></dd> -->                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5">팝콘</a></h3></dd> -->                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6">음료</a></h3></dd> -->                        
+<!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7">스낵</a></h3></dd> -->                        
 <!--                             <dd><h3><a href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10">플레이존</a></h3></dd> -->
                         
                     <dd><h3><a href="https://brand.naver.com/cgv" class="arrowR" target="_blank">씨네샵</a></h3></dd>
