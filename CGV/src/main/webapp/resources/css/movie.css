@@ -1,0 +1,119 @@
+	#contaniner{
+		display: block;
+		position: relative;
+    	width: 100%;
+    	height : 1500px;
+/*     margin: 0 auto; */
+	}
+	
+	ol {
+		list-style: none;
+		display: block;
+		width : 100%;
+	}
+	
+	ol > li {
+	    float : left;
+	    width : 197px;
+/* 	    height : 260px; */
+	    
+    	margin-left: 64px;
+    	padding-bottom: 30px;
+	}
+	
+	.box-image {
+/* 		position: relative; */
+/*     	width : 197px; */
+/*     	height: 100%; */
+/*     margin-left: 64px; */
+    padding-bottom: 10px;
+	}
+	
+	.rank {
+		background : red;
+		color : #fff;
+		text-align : center;
+    	line-height : 28px;
+    	font-size : 19px;
+    	display : block;
+/*     	width : 100%; */
+/*     	whit */
+	}
+	
+	.thumb-image > a {
+		display : block;
+	}
+	
+	.thumb-image{
+		display: block;
+	    position: relative;
+	}
+	
+	.box-image img {
+		width : 100%;
+		height : 260px;
+	}
+	
+	.ico-grade{
+		background : url("../images/12.svg") center;
+		border-radius : 2px;
+		/*inline-flex 속성이 있다면 서로 가로로 배치가 됨*/
+		display: inline-flex;
+    	font-size: 0px;
+		position: absolute; top: 0px; left : 0px;
+	    width: 20px;
+	    height: 20px;
+
+	}
+
+	.title {
+	    display: block;
+	    color: #333333;
+	    font-size: 15px;
+/* 	    white-space: nowrap; */
+/* 	    text-overflow: ellipsis; */
+/* 	    overflow: hidden; */
+	}
+	
+	strong {
+	    font-weight: 500;
+	}
+	
+	.score {
+		display: block;
+    	font-size: 13px;
+/*     	margin-top: 3px; */
+    	vertical-align: middle;
+	}
+	
+	.score .percent{
+		vertical-align: middle;
+	}
+	.score .percent span {
+    	display: inline-block;
+    	margin-left: 10px;
+    	font-family: Verdana, Geneva, sans-serif;
+/*     	vertical-align: top; */
+	}
+	
+
+	.egg-gage {
+	    display: inline-block;
+	    width: auto !important;
+/* 	    line-height: 1; */
+	}
+	.egg-gage.small .egg {
+		display: inline-block;
+		height: 26px;
+		background: url(../images/sprite_egg.png) no-repeat 0 -47px;
+	}
+	
+	.egg-gage.small .egg.great {
+	    width: 16px;
+	    background-position: -41px -47px;
+    }
+	
+	
+	.egg-gage.small .percent {
+    display: inline-block;
+    }

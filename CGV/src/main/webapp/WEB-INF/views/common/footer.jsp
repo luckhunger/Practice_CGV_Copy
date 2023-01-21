@@ -16,57 +16,6 @@ list-style: none;
 }
 
 
-/* html,body, #contaniner, #footer{} */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
-font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td {font-family:'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif; font-size:100%; margin:0; padding:0; border:0; vertical-align:baseline; word-break:break-all;}
-body {line-height:1; color:black; }
-ol, ul {list-style:none;}
-h1, h2, h3, h4, h5, h6{font-weight:500;}
-table {width:100%; border-collapse:separate; border-spacing:0;}
-caption, th, td {font-weight:300; line-height:1.5em; text-align:center; vertical-align:middle;}
-blockquote:before, blockquote:after, q:before, q:after {content:'';}
-blockquote, q {quotes:'' '';}
-button,
-input {overflow:visible;}
-button::-moz-focus-inner {border:0; padding:0;}
-input, select, img {vertical-align:middle;}
-textarea {overflow:auto; overflow-x:hidden; vertical-align:top;}
-em {font-style:normal;}
-strong{font-weight:500;}
-i{font-style:normal;}
-html, body {height:100%;}
-html {overflow-y:scroll;}
-
-body, input, textarea, select, button, table
- {font-size:13px; line-height:1.2; color:#666; font-family:'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif; font-weight:400}
-table thead th {font-weight:500;}
-legend {font:0/0 a; position:absolute; right:-999em; top:-999em; zoom:1;}
-
-/* a 태그 밑줄 제거*/
-a {color:inherit; text-decoration:none;};
-
-button, input {overflow:visible;}
-
-/*테두리 제거*/
-button::-moz-focus-inner {border:0; padding:0;}
-
-button:focus,
-[type='checkbox']:focus,
-[type='radio']:focus,
-[tabindex]:focus,
-[href]:focus {outline:3px solid #ead3d7;}
-
-button,
-input[type='submit'],
-input[type='reset'] { padding:0;border:0 none; background-color:transparent; vertical-align:middle;}
-button,
-input[type='submit'],
-input[type='button'] {cursor:pointer; margin:0; padding:0;}
-input[type='text'],input[type='password'] {display:inline-block; height:25px; line-height:22px; padding-left:10px; border:1px solid #b5b5b5;}
-
 /* ===========================================
    Footer Area 
 ============================================ */
@@ -183,7 +132,7 @@ footer .company_info_wrap{display:flex; justify-content:space-between; align-ite
 
             <iframe src='//ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@Popicon' width='154' height='182' frameborder='0' scrolling='no' topmargin='0' leftmargin='0' marginwidth='0' marginheight='0' allowTransparency="true" id="ad_float1"></iframe>
         </div>
-        <script type="text/javascript">            OpenAD();</script>
+<!--         <script type="text/javascript">            OpenAD();</script> -->
         <!-- //Float Ad -->
 	</footer>
 	<!-- E Footer -->
